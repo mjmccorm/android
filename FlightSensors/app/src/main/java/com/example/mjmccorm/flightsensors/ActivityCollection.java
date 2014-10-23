@@ -4,38 +4,27 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.TextView;
 
 
-public class MyActivity extends Activity implements OnClickListener {
+public class ActivityCollection extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_collection);
 
-        //--- find both the buttons---
-        Button startButton = (Button) findViewById(R.id.button_start);
-        startButton.setOnClickListener(this);
+        int age = getIntent().getIntExtra("user-age", -1);
+
+        TextView myTextView = (TextView)findViewById(R.id.lblActCol);
+        myTextView.setText("" + age);
     }
 
-    //--- Implement the OnClickListener callback
-    public void onClick(View v) {
-        if(v.getId() == R.id.button_start){
-
-            TextView txtSensor = (TextView) findViewById(R.id.txtSensor1);
-            txtSensor.setText("Test");
-
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my, menu);
+        getMenuInflater().inflate(R.menu.activity_collection, menu);
         return true;
     }
 

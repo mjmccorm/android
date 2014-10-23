@@ -11,5 +11,8 @@
     <string name="label_pressure">Pressure:</string>
     <string name="label_time">Time:</string>
     <string name="button_start">Start Collecting Data</string>
+    <string name="button_stop">Stop Collecting Data</string>
+    <string name="title_activity_activity_collection">ActivityCollection</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
