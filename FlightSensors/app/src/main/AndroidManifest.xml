@@ -19,6 +19,7 @@
         <activity
             android:name=".ActivityCollection"
             android:label="@string/title_activity_activity_collection" >
+
         </activity>
     </application>
 
