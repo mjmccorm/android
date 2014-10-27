@@ -1,17 +1,298 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.mjmccorm.flightsensors.ActivityCollection">
+    tools:context="com.example.mjmccorm.flightsensors.ActivityCollection"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/activity_collection"
+    android:padding="@dimen/activity_horizontal_margin">
 
     <TextView
-        android:text="@string/hello_world"
+        android:layout_width="137dp"
+        android:layout_height="31dp"
+        android:text="@string/label_pressure"
+        android:id="@+id/txtLblPressure"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txtValPressure"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_pressure_units"
+        android:id="@+id/txtLblPressureUnits"
+        android:layout_row="0"
+        android:layout_column="3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/label_ambient_temperature"
+        android:id="@+id/txtLblAmbientTemperature"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lblActCol" />
+        android:text="New Text"
+        android:id="@+id/txtValAmbientTemperature"
+        android:layout_row="1"
+        android:layout_column="1" />
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_ambient_temperature_units"
+        android:id="@+id/txtLblAmbientTemperatureUnits"
+        android:layout_row="1"
+        android:layout_column="3" />
+
+    <TextView
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:text="@string/label_relative_humidity"
+        android:id="@+id/txtLblRelativeHumidity"
+        android:layout_row="2"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:text="New Text"
+        android:id="@+id/txtValRelativeHumidity"
+        android:layout_row="2"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_relative_humidity_units"
+        android:id="@+id/txtLblRelativeHumidityUnits"
+        android:layout_row="2"
+        android:layout_column="3" />
+
+    <TextView
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:text="@string/label_light"
+        android:id="@+id/txtLblLight"
+        android:layout_row="3"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:text="New Text"
+        android:id="@+id/txtValLight"
+        android:layout_row="3"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_light_units"
+        android:id="@+id/txtLblLightUnits"
+        android:layout_row="3"
+        android:layout_column="3" />
+
+    <TextView
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:text="@string/label_proximity"
+        android:id="@+id/txtLblProximity"
+        android:layout_row="4"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:text="New Text"
+        android:id="@+id/txtValProximity"
+        android:layout_row="4"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_proximity_units"
+        android:id="@+id/txtLblProximityUnits"
+        android:layout_row="4"
+        android:layout_column="3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_accelerometer"
+        android:id="@+id/txtLblAccelerometer"
+        android:layout_row="5"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_accelerometer_x"
+        android:id="@+id/txtLblAccelerometerX"
+        android:layout_row="6"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Value"
+        android:id="@+id/txtValAccelerometerX"
+        android:layout_row="6"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_accelerometer_y"
+        android:id="@+id/txtLblAccelerometerY"
+        android:layout_row="7"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Value"
+        android:id="@+id/txtValAccelerometerY"
+        android:layout_row="7"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="@string/label_accelerometer_z"
+        android:id="@+id/txtLblAccelerometerZ"
+        android:layout_row="8"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Value"
+        android:id="@+id/txtValAccelerometerZ"
+        android:layout_row="8"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_gyroscope"
+        android:id="@+id/textView6"
+        android:layout_row="9"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_gyroscope_x"
+        android:id="@+id/txtLblGyroscopeX"
+        android:layout_row="10"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Value"
+        android:id="@+id/txtValGyroscopeX"
+        android:layout_row="10"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_gyroscope_y"
+        android:id="@+id/txtLblGyroscopeY"
+        android:layout_row="11"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Value"
+        android:id="@+id/txtValGyroscopeY"
+        android:layout_row="11"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/label_gyroscope_z"
+        android:id="@+id/txtLblGyroscopeZ"
+        android:layout_row="12"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Value"
+        android:id="@+id/txtValGyroscopeZ"
+        android:layout_row="12"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_magnetic_field"
+        android:id="@+id/textView7"
+        android:layout_row="13"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_magnetic_field_x"
+        android:id="@+id/txtLblMagneticFieldX"
+        android:layout_row="14"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Value"
+        android:id="@+id/txtValMagneticFieldX"
+        android:layout_row="14"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_magnetic_field_y"
+        android:id="@+id/textView9"
+        android:layout_row="15"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Value"
+        android:id="@+id/txtValMagneticFieldY"
+        android:layout_row="15"
+        android:layout_column="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_magnetic_field_z"
+        android:id="@+id/textView11"
+        android:layout_row="16"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Value"
+        android:id="@+id/txtValMagneticFieldZ"
+        android:layout_row="16"
+        android:layout_column="1" />
+
+
+</GridLayout>

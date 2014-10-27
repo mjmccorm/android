@@ -7,12 +7,52 @@
     <string name="action_settings">Settings</string>
     <string name="label_latitude">Latitude:</string>
     <string name="label_longitude">Longitude:</string>
-    <string name="label_temperature">Temperature:</string>
+
+    <string name="label_ambient_temperature">Temperature:</string>
+    <string name="label_ambient_temperature_units">C</string>
+
     <string name="label_pressure">Pressure:</string>
+    <string name="label_pressure_units">mm Hg</string>
+
+    <string name="label_relative_humidity">Relative Humidity:</string>
+    <string name="label_relative_humidity_units">%</string>
+
+    <string name="label_light">Light:</string>
+    <string name="label_light_units">Units</string>
+
+    <string name="label_proximity">Proximity:</string>
+    <string name="label_proximity_units">Units</string>
+
+    <string name="label_accelerometer">Accelerometer:</string>
+    <string name="label_accelerometer_x">X:</string>
+    <string name="label_accelerometer_y">Y:</string>
+    <string name="label_accelerometer_z">Z:</string>
+    <string name="label_accelerometer_units">Units</string>
+
+    <string name="label_gyroscope">Gyroscope:</string>
+    <string name="label_gyroscope_x">X:</string>
+    <string name="label_gyroscope_y">Y:</string>
+    <string name="label_gyroscope_z">Z:</string>
+    <string name="label_gyroscope_units">Units</string>
+
+    <string name="label_magnetic_field">Magnetic Field:</string>
+    <string name="label_magnetic_field_x">X:</string>
+    <string name="label_magnetic_field_y">Y:</string>
+    <string name="label_magnetic_field_z">Z:</string>
+    <string name="label_magnetic_field_units">Units</string>
+
     <string name="label_time">Time:</string>
     <string name="button_start">Start Collecting Data</string>
     <string name="button_stop">Stop Collecting Data</string>
-    <string name="title_activity_activity_collection">ActivityCollection</string>
+    <string name="title_activity_activity_collection">Sensor Data</string>
     <string name="hello_world">Hello world!</string>
+
+    <string name="error_invalidaddr">Invalid IP address</string>
+    <string name="error_neterror">Unknown UDP network problem</string>
+    <string name="error_sensorerror">Unknown IMU sensor problem</string>
+    <string name="UDP_Stream">UDP Stream</string>
+    <string name="SD_Stream">SD-Card Stream</string>
+    <string name="Not_Sending">No Stream established</string>
+    <string name="Stream_Established">Stream established. Sending.</string>
 
 </resources>
